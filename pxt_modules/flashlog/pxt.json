@@ -1,0 +1,26 @@
+{
+    "name": "flashlog",
+    "description": "Data logging to flash.",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "flashlog.cpp",
+        "shims.d.ts",
+        "enums.d.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "targetVersions": {
+        "target": "6.1.8",
+        "pxt": "9.3.7"
+    },
+    "searchOnly": true,
+    "disablesVariants": [
+        "mbdal"
+    ],
+    "icon": "./static/libs/flashlog.png"
+}
