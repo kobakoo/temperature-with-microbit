@@ -22,7 +22,7 @@
     <h1>温度測定用即席プログラム <strong style="color:red;">⚠️このプログラムは動作確認を行なっておりません</strong></h1>
     <button onclick="onStartButtonClick()">接続</button>
     <br>
-    <p>＊Bluetoothを繋いだまま、microbitの左のボタンを押すと下のグラフにデータが表示されます</p>
+    <p>＊Micro:bitをUSBで物理的にを繋いだまま、Micro:bitの左のボタンを押すと下のグラフにデータが表示されます</p>
         <canvas id="myChart"></canvas>
     <script>
               class LineBreakTransformer {
@@ -97,7 +97,7 @@ async function onStartButtonClick() {
                 //     result.push(json);
                 //     i++;
                 // })
-                chart.data.datasets[0].data = value ;
+                chart.data.datasets[0].data = value.trim().split(",");
                 chart.update({
                   preservation: true,
                 });
